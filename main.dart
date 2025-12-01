@@ -170,5 +170,5 @@ void main() {
   print("type of esh is : ${esh.toString().runtimeType}");
   
   bool ed=true;
-  print("ed type is: ${ed.toString()*.runtimeType}");
+  print("ed type is: ${ed.toString().runtimeType}");
 }
