@@ -171,4 +171,68 @@ void main() {
   
   bool ed=true;
   print("ed type is: ${ed.toString().runtimeType}");
+
+  Null nullVariable = null;
+  print(nullVariable);
+
+  print("----");
+
+  //   question
+
+  /*Calculate the area of a circle with radius 12.5 units and display the result
+   Area =pi*r*r
+   pi=3.142, r=12.5 */
+
+  double r = 12.5;
+  double pi = 3.142;
+
+  double area = pi * r * r;
+  print("area is : ${area}");
+
+  //   round off (asanna agayata wataiima)
+  //   round off whole number mean asanna whole number ekt
+  //   round off 2nd decimal place kiwwoth asanna dashama isthana 2kt
+
+  //  round off to the whole number
+  int roundOffArea = area.round();
+  print("when round area is: ${roundOffArea}");
+
+  //  ceil values mekedi dashama ookoma watayala enne
+  /* 40.00001= 41
+     40.9=41
+     40.09=41 */
+  print(area.ceil());
+  print("area is: ${area.ceil()}");
+//   floor value mean difference of ceil
+  /* 487.01785=487
+     487.9 =487  */
+  print("area is: ${area.floor()}");
+  
+//   customize decimal places
+  
+  print("round off to 2 decimal places : ${area.toStringAsFixed(2)}");
+  print("round off to 3 decimal places:${area.toStringAsFixed(3)}");
+  
+  
+  
+//   question 2 
+  /* create a programm that converts the user enterd fahrenheit temperature in to celsius*/
+  
+  double f=0;
+  double p=(f-32)*5/9;
+  print("celcius value of $f farrenhite is ${p.toStringAsFixed(3)} celcius");
+  
+  
+  
+//   initialization 
+  int e= 190;
+  String s ="saman";
+  
+//   assignment
+  e=200;
+  print(e);
+  
+  s="kamal";
+  print(s);
+  
 }
